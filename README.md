@@ -1,1 +1,3 @@
-# This is a readme
+# Nvim config
+
+My current nvim config
