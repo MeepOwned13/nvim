@@ -5,7 +5,8 @@ require("mason").setup({
             package_pending = "➜",
             package_uninstalled = "✗"
         }
-    }
+    },
+    install_root_dir = os.getenv("MASON_INSTALL") .. "/"
 })
 require("mason-lspconfig").setup()
 
@@ -19,6 +20,7 @@ lsp.ensure_installed({
 	'html',
 	'cssls',
     'lua_ls',
+    'cmake'
 })
 
 lsp.nvim_workspace()
