@@ -25,8 +25,13 @@ lsp.ensure_installed({
 })
 
 require("lspconfig").cmake.setup{
-  filetypes = {'cmake', 'CMakeLists.txt'},
+    filetypes = {'cmake', 'CMakeLists.txt'},
 }
+
+
+require("lspconfig").glsl_analyzer.setup{
+  filetypes = {'glsl', 'frag', 'vert', 'conf'} -- shaders are detected as conf for some reason (guessing #version <num> header does that)
+} -- https://github.com/nolanderc/glsl_analyzer
 
 
 lsp.nvim_workspace()
@@ -108,5 +113,3 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
-
-require("lspconfig").glsl_analyzer.setup{} -- https://github.com/nolanderc/glsl_analyzer

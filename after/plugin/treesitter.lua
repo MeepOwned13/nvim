@@ -1,6 +1,6 @@
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the five listed parsers should always be installed)
-  ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
+  ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "glsl" },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
   sync_install = false,
@@ -25,3 +25,5 @@ require'treesitter-context'.setup()
 vim.api.nvim_set_hl(0, "TreeSitterContext", {bg = "none"})
 vim.api.nvim_set_hl(0, "TreeSitterContextBottom", {bg = "none", underline=true})
 vim.api.nvim_set_hl(0, "TreeSitterContextLineNumber", {fg = "#ffffff"})
+
+vim.treesitter.language.register('glsl', {'vert', 'frag', 'conf'}) -- shaders are detected as conf for some reason (guessing #version <num> header does that)
