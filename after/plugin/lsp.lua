@@ -20,8 +20,14 @@ lsp.ensure_installed({
 	'html',
 	'cssls',
     'lua_ls',
-    'cmake'
+    'cmake',
+    'jsonls'
 })
+
+require("lspconfig").cmake.setup{
+  filetypes = {'cmake', 'CMakeLists.txt'},
+}
+
 
 lsp.nvim_workspace()
 
@@ -102,3 +108,5 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+
+require("lspconfig").glsl_analyzer.setup{} -- https://github.com/nolanderc/glsl_analyzer
