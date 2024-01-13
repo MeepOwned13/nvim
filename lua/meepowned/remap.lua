@@ -4,8 +4,10 @@ vim.g.mapleader = " "
 vim.keymap.set("n", ":W", ":w")
 -- moving to the end and start of lines
 vim.keymap.set("n", "<A-h>", "^")
+vim.keymap.set("v", "<A-h>", "^")
 vim.keymap.set("i", "<A-h>", "<ESC>I")
 vim.keymap.set("n", "<A-l>", "$")
+vim.keymap.set("v", "<A-l>", "$")
 vim.keymap.set("i", "<A-l>", "<ESC>A")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)

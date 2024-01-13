@@ -10,3 +10,4 @@ For stuff to work on windows:
 - install npm (node-[something])
 - have a C compiler
 - make sure to have glsl_analyzer in path (https://github.com/nolanderc/glsl_analyzer)
+- packer may require setting safe directory (use " instead of ')
