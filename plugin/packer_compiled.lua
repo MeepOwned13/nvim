@@ -112,7 +112,7 @@ _G.packer_plugins = {
   harpoon = {
     loaded = true,
     path = "C:\\Users\\Sebők Mátyás\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\harpoon",
-    url = "https://github.com/theprimeagen/harpoon"
+    url = "https://github.com/ThePrimeagen/harpoon"
   },
   ["lsp-zero.nvim"] = {
     loaded = true,
