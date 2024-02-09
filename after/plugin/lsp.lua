@@ -15,7 +15,7 @@ local lsp = require('lsp-zero')
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-	'pyright',
+	'pylsp',
 	'clangd',
 	'html',
 	'cssls',
@@ -33,6 +33,18 @@ require("lspconfig").glsl_analyzer.setup{
   filetypes = {'glsl', 'frag', 'vert', 'conf'} -- shaders are detected as conf for some reason (guessing #version <num> header does that)
 } -- https://github.com/nolanderc/glsl_analyzer
 
+require("lspconfig").pylsp.setup{
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    ignore = {"W391"},
+                    maxLineLength = 120
+                }
+            }
+        }
+    }
+}
 
 lsp.nvim_workspace()
 
