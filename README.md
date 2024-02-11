@@ -5,7 +5,8 @@ My current nvim config
 For stuff to work on windows:
 
 - NVIM environment variable: nvim config root dir (Win: located in AppData/Local/)
-- MASON_INSTALL environmet variable: install location
+- MASON_INSTALL environment variable: install location
+- PYTHON environment variable: path to python.exe (needed for libraries)
 - bypass WindowsApps python3 bs
 - install npm (node-[something])
 - have a C compiler
