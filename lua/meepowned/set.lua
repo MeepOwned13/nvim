@@ -32,3 +32,7 @@ vim.opt.colorcolumn = "120"
 vim.opt.pumheight = 15
 
 vim.g.mapleader = " "
+
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldlevel = 100
