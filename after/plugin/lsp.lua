@@ -17,8 +17,6 @@ lsp.preset("recommended")
 lsp.ensure_installed({
 	'pylsp',
 	'clangd',
-	'html',
-	'cssls',
     'lua_ls',
     'cmake',
     'jsonls'
