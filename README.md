@@ -8,7 +8,8 @@ For stuff to work on windows:
 - MASON_INSTALL environment variable: install location
 - PYTHON environment variable: path to python.exe (needed for libraries)
 - bypass WindowsApps python3 bs
-- install npm (node-[something])
+- install npm: ```choco install -y --force nodejs-lts ```
 - have a C compiler
 - make sure to have glsl_analyzer in path (https://github.com/nolanderc/glsl_analyzer)
+- install packer via PowerShell: ```git clone https://github.com/wbthomason/packer.nvim "$env:LOCALAPPDATA\nvim-data\site\pack\packer\start\packer.nvim"```
 - packer may require setting safe directory (use " instead of ')
