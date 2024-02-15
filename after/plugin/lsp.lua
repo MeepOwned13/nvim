@@ -6,7 +6,7 @@ require("mason").setup({
             package_uninstalled = "✗"
         }
     },
-    install_root_dir = os.getenv("MASON_INSTALL") .. "/"
+    install_root_dir = os.getenv("NVIM_MASON_INSTALL") .. "/"
 })
 require("mason-lspconfig").setup()
 
@@ -40,7 +40,7 @@ require("lspconfig").pylsp.setup{
                     maxLineLength = 120
                 },
                 jedi = {
-                    environment = os.getenv("PYTHON")
+                    environment = os.getenv("NVIM_PYTHON")
                 }
             }
         }
