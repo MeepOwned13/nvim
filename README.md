@@ -4,10 +4,11 @@ My current nvim config
 
 For stuff to work on windows:
 
-- NVIM environment variable: nvim config root dir (Win: located in AppData/Local/)
-- MASON_INSTALL environment variable: install location
-- PYTHON environment variable: path to python.exe (needed for libraries)
-- bypass WindowsApps python3 bs
+- install [packer.nvim](https://github.com/wbthomason/packer.nvim)
+- NVIM_ROOT_DIR environment variable: nvim config root dir (Win: located in AppData/Local/), used for setting undodir
+- NVIM_MASON_INSTALL environment variable: install location
+- NVIM_PYTHON environment variable: path to python.exe (needed for libraries)
+- bypass WindowsApps python3 running the Microsoft Store (might need a python3.cmd -> py/python)
 - install npm: ```choco install -y --force nodejs-lts ```
 - have a C compiler
 - make sure to have glsl_analyzer in path (https://github.com/nolanderc/glsl_analyzer)
