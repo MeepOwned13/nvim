@@ -15,4 +15,4 @@ For stuff to work on windows:
 
 ### Known issues
 
-- <C-d> in harpoon doesn't actually delete harpoon entry
+- \<C-d> in harpoon doesn't actually delete harpoon entry
