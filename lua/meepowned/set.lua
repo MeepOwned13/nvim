@@ -32,6 +32,7 @@ vim.opt.colorcolumn = "120"
 vim.opt.pumheight = 15
 
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
