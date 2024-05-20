@@ -12,3 +12,7 @@ For stuff to work on windows:
 - install npm: ```choco install -y --force nodejs-lts ```
 - install ripgrep: ```choco install ripgrep```
 - have a C compiler, ```choco install mingw``` preferred
+
+### Known issues
+
+- <C-d> in harpoon doesn't actually delete harpoon entry
