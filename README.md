@@ -7,7 +7,6 @@ For stuff to work on windows:
 - uses lazy.nvim, it installs itself
 - NVIM_ROOT_DIR environment variable: nvim config root dir (Win: located in AppData/Local/), used for setting undodir
 - NVIM_MASON_INSTALL environment variable: install location
-- NVIM_PYTHON environment variable: path to python.exe (needed for libraries)
 - bypass WindowsApps python3 running the Microsoft Store (might need a python3.cmd -> py/python)
 - install npm: ```choco install -y --force nodejs-lts ```
 - install ripgrep: ```choco install ripgrep```

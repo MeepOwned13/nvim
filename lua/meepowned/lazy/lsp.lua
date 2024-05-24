@@ -53,9 +53,6 @@ return {
                                         pycodestyle = {
                                             ignore = { "W391" },
                                             maxLineLength = 120
-                                        },
-                                        jedi = {
-                                            environment = os.getenv("NVIM_PYTHON")
                                         }
                                     }
                                 }

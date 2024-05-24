@@ -15,4 +15,3 @@ require("lazy").setup({
     spec = "meepowned.lazy",
     change_detection = { notify = false }
 })
-
