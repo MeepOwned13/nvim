@@ -32,11 +32,11 @@ return {
     {
         'nvim-treesitter/nvim-treesitter-context',
         config = function()
-            require 'treesitter-context'.setup()
-
             vim.api.nvim_set_hl(0, "TreeSitterContext", { bg = "none" })
             vim.api.nvim_set_hl(0, "TreeSitterContextBottom", { bg = "none", underline = true })
             vim.api.nvim_set_hl(0, "TreeSitterContextLineNumber", { fg = "#ffffff" })
+
+            require 'treesitter-context'.setup()
         end
     }
 }
