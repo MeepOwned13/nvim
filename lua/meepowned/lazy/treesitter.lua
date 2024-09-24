@@ -16,6 +16,9 @@ return {
 
                 highlight = {
                     enable = true,
+                    disable = function(lang, bufnr) -- Disable in large buffers
+                        return vim.api.nvim_buf_line_count(bufnr) > 50000
+                    end,
 
                     -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
                     -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
