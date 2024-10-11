@@ -11,6 +11,7 @@ For stuff to work on windows:
 - install npm: ```choco install -y --force nodejs-lts ```
 - install ripgrep: ```choco install ripgrep```
 - have a C compiler, ```choco install mingw``` preferred
+- have fd installed, ```choco install fd```
 
 ### Known issues
 
