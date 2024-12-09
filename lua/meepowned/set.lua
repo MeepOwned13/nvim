@@ -34,6 +34,7 @@ vim.opt.pumheight = 15
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 vim.g.python3_host_prog = os.getenv("NVIM_PY_EXEC")
+vim.g.undotree_DiffCommand = "FC"
 
 vim.opt.foldmethod = "expr"
 vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
